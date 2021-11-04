@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display&family=STIX+Two+Text:ital,wght@1,500&display=swap");
+body {
+  padding-top: 58px;
+  background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E'), linear-gradient(#967e90, #453942);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 6px;
+}
+
+.navbar-light {
+  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.3)) !important;
+  font-family: "Luckiest Guy", cursive;
+  box-shadow: inset 0 0 20px #ff00a8, 0 0 20px #b21c7f;
+  letter-spacing: 6px;
+}
+
+.position-absolute.top-0 {
+  margin-top: -2px;
+  transform: rotate(180deg);
+}
+.position-absolute.bottom-0 {
+  margin-bottom: -2px;
+}
+
+.nav-item {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-shadow: 1px 1px 2px #e6cbf2, 0 0 1em #df9ffc, 0 0 0.2em #df9ffc;
+}
+
+.carousel-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  bottom: 0 !important;
+}
+.carousel-caption > div {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 20px #e6cbf2, 0 0 20px #df9ffc;
+}
+.carousel-caption h1, .carousel-caption h2, .carousel-caption h3, .carousel-caption h4, .carousel-caption h5, .carousel-caption h6, .carousel-caption p {
+  text-shadow: 1px 1px 2px #e6cbf2, 0 0 1em #df9ffc, 0 0 0.2em #df9ffc;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+
+.sticky-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.sticky-header.is-fixed {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  animation: slideInHeader;
+  animation-duration: 0.2s;
+  box-shadow: 0 0 4px #333;
+}
+
+@keyframes slideInHeader {
+  0% {
+    top: -80px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.content-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 0 20px #e6cbf2, 0 0 20px #df9ffc;
+  border-radius: 5%;
+  width: 50%;
+  letter-spacing: 6px;
+}
+
+#glow {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.lead {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "STIX Two Text", serif;
+  letter-spacing: 6px;
+  text-shadow: 1px 1px 2px #e6cbf2, 0 0 1em #df9ffc, 0 0 0.2em #df9ffc;
+}
+
+#projects {
+  background-image: linear-gradient(transparent, #df9ffc);
+  opacity: 0.9;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: inset 0 0 20px #85748c, 0 0 20px #691e8a;
+  opacity: 0.9;
+}
+
+.interested {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #df9ffc;
+  border-radius: 5%;
+  width: 50%;
+  text-shadow: 1px 1px 2px #e6cbf2, 0 0 1em #df9ffc, 0 0 0.2em #df9ffc;
+  font-size: 1.6rem;
+}
+
+label {
+  color: #df9ffc;
+  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+section.bg-primary .accordion-button,
+section.bg-secondary .accordion-button,
+section.bg-dark .accordion-button {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 4px;
+}
+section.bg-primary .accordion-button::after,
+section.bg-secondary .accordion-button::after,
+section.bg-dark .accordion-button::after {
+  filter: brightness(100);
+}
+
+#footer {
+  color: #fff;
+  font-size: "STIX Two Text", serif;
+  background: no-repeat center/100% url("https://drive.google.com/uc?export=view&id=1MWL0OgqBN4HW5hGDXlexwYL1y0w8XYW_");
+  opacity: 0.7;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #df9ffc;
+}
+
+#btn {
+  color: #fff;
+  background: #cf6efa;
+  opacity: 0.9;
+}
+
+#text-programer {
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px #e6cbf2, 0 0 1em #df9ffc, 0 0 0.2em #df9ffc;
+}
+
+footer {
+  font-size: 1.5rem;
+}

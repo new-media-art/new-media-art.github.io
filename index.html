@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Portfolio/UFC</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-md navbar-light sticky-header">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">ULRICH FLADL CARMONA</a>
+    <button class="navbar-toggler" type= "button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class= "collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav m-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+        </li>
+    <li class= "nav-item">
+      <a class="nav-link" href="#">PROJECTS</a>
+    </li>
+    <li class= "nav-item">
+      <a class= "nav-link" href="#">CONTACT</a>
+    </li>
+      </ul>
+  </div>
+  </div>
+</nav>
+
+<header>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src= "https://drive.google.com/uc?export=view&id=1FkdR1KfwtjCQ_3Bpx_D9J-jWuAtUlbrm" class= "d-block w-100"  alt= "programmer">
+      <div class="carousel-caption">
+        <div>
+        <h5 class="display-2 animate__animated animate__tada">ULRICH FLADL CARMONA</h5>
+        <p class="lead">Designer & Front-end Developer</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img id="img-header" src="https://drive.google.com/uc?export=view&id=1UEQSxOMzySjFTmqC5xrbSCJMrjv8AR9n" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <div>
+        <h5 class="display-2 animate__animated animate__tada">MY PORTFOLIO</h5>
+        <p class="lead">CHECK OUT MY STUFF!</p>
+         </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://drive.google.com/uc?export=view&id=1jtdbN53nZ7doHLySR_fKSXDnfzmUaHUA" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <div>
+        <h5 class="display-2 animate__animated animate__tada">LET'S START NOW!</h5>
+          <a id= "btn" class="btn" href="#">CONTACT</a>
+          </div>
+      </div>
+    </div>
+  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+</header>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#3C3142" fill-opacity="0.9" d="M0,192L8.3,170.7C16.6,149,33,107,50,101.3C66.2,96,83,128,99,138.7C115.9,149,132,139,149,160C165.5,181,182,235,199,229.3C215.2,224,232,160,248,144C264.8,128,281,160,298,192C314.5,224,331,256,348,234.7C364.1,213,381,139,397,112C413.8,85,430,107,447,138.7C463.4,171,480,213,497,229.3C513.1,245,530,235,546,208C562.8,181,579,139,596,106.7C612.4,75,629,53,646,69.3C662.1,85,679,139,695,181.3C711.7,224,728,256,745,277.3C761.4,299,778,309,794,266.7C811,224,828,128,844,80C860.7,32,877,32,894,26.7C910.3,21,927,11,943,16C960,21,977,43,993,53.3C1009.7,64,1026,64,1043,80C1059.3,96,1076,128,1092,117.3C1109,107,1126,53,1142,53.3C1158.6,53,1175,107,1192,144C1208.3,181,1225,203,1241,224C1257.9,245,1274,267,1291,277.3C1307.6,288,1324,288,1341,293.3C1357.2,299,1374,309,1390,277.3C1406.9,245,1423,171,1432,133.3L1440,96L1440,0L1431.7,0C1423.4,0,1407,0,1390,0C1373.8,0,1357,0,1341,0C1324.1,0,1308,0,1291,0C1274.5,0,1258,0,1241,0C1224.8,0,1208,0,1192,0C1175.2,0,1159,0,1142,0C1125.5,0,1109,0,1092,0C1075.9,0,1059,0,1043,0C1026.2,0,1010,0,993,0C976.6,0,960,0,943,0C926.9,0,910,0,894,0C877.2,0,861,0,844,0C827.6,0,811,0,794,0C777.9,0,761,0,745,0C728.3,0,712,0,695,0C678.6,0,662,0,646,0C629,0,612,0,596,0C579.3,0,563,0,546,0C529.7,0,513,0,497,0C480,0,463,0,447,0C430.3,0,414,0,397,0C380.7,0,364,0,348,0C331,0,314,0,298,0C281.4,0,265,0,248,0C231.7,0,215,0,199,0C182.1,0,166,0,149,0C132.4,0,116,0,99,0C82.8,0,66,0,50,0C33.1,0,17,0,8,0L0,0Z"></path>
+</svg>
+
+<section class= "my-5">
+  <div class="container">
+    <h2 id ="glow" class= "content-title text-light">Hi, I am Ulrich!</h2>
+    <div class="row">
+      <div class="col-md-6">
+      <img src="https://drive.google.com/uc?export=view&id=1tmp0GOcLGHu-FuOBnJOhA91EqD6k86qa" class="img-fluid mb-4 mb-md-0 shadow-lg">
+    </div>
+      <div class="col-md-6">
+        <p class="lead">These are my skills.  But watch out, I'm improving fast!:</p>
+        <label>JavaScript & Python</label>
+        <div class="progress mb-2">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          
+        <label>HTML5 & CSS3</label>
+          <div class="progress mb-2">
+            <div class="progress-bar bg-dark" role= "progressbar" style= "width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        
+        <label>Word Press & Elementor</label>
+        <div class="progress mb-2">
+         <div class="progress-bar bg-dark" role="progressbar" style= "width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>                                                                                                                             </div>                                                                                                                                     
+        <label>Photoshop & Illustrator</label>
+        <div class="progress mb-2">
+          <div class="progress-bar bg-dark" role="progressbar" style= "width: 75%" aria-valuenow= "75" aria-valuemin="0" aria-vluemax="100"></div>
+        </div>
+          
+        <label>SCSS & BOOTSRAP 5</label>
+          <div class="progress mb-2">
+            <div class="progress-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow= "50%" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id= "projects" class="mt-5 py-5">
+  <div class="container">
+    <h2 id="glow" class="content-title">My Projects</h2>
+    <div class="row g-5">
+      
+       <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://artelaguna.world/reserved/1/upload/url_immagine_1/81/w410/81106_Anunciaci%C3%B3n.jpg" class="d-block w-100"  alt="painting by Amanda Carmona">
+      <div class="card-body">
+        <h5 class="card-title">Amanda Carmona</h5>
+        <p class="card-text">A website for the puertorrican painter Amanda Carmona.</p>
+       <a href="#" class="btn btn-dark">Visit Site</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+     <img src="https://drive.google.com/uc?export=view&id=1CWuHdqOhRI2pQAre4smh4ZuRVcBN8UKY" class="d-block w-100"  alt="programmer">
+      <div class="card-body">
+        <h5 class="card-title">Prater Park</h5>
+        <p class="card-text">A fan site for the amusment park Prater in Vienna.</p>
+        <a href="#" class="btn btn-dark">Visit Site</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card">
+      <img src="https://drive.google.com/uc?export=view&id=1viLdhg2zKlc9y2maxDtk7g2h2HrEFWVt" class="d-block w-100" alt="programmer">
+      <div class="card-body">
+        <h5 class="card-title">WienStation</h5>
+        <p class="card-text">A website for the gallery and cultural enter WienSation in Vienna</p>
+        <a href="#" class="btn btn-dark">Visit Site</a>
+      </div>
+    </div>
+  </div>
+  
+         <div class="col">
+    <div class="card">
+      <img src="https://drive.google.com/uc?export=view&id=1uBbGzpCxlUcq4G72cOm8HjN2RXboainB" class="d-block w-100" alt="programmer">
+      <div class="card-body">
+        <h5 class="card-title">Batbout</h5>
+        <p class="card-text">A website for the popular mieddle eastern restaurant Batbout in Puerto Rico.</p>
+        <a href="#" class="btn btn-dark">Visit Site</a>
+      </div>
+    </div>
+  </div>
+</div>
+           
+          </div>
+  </div>
+</section>
+<svg id= "pink-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#df9ffc" fill-opacity="0.9" d="M0,64L6.2,96C12.3,128,25,192,37,218.7C49.2,245,62,235,74,213.3C86.2,192,98,160,111,165.3C123.1,171,135,213,148,202.7C160,192,172,128,185,101.3C196.9,75,209,85,222,80C233.8,75,246,53,258,85.3C270.8,117,283,203,295,202.7C307.7,203,320,117,332,80C344.6,43,357,53,369,80C381.5,107,394,149,406,176C418.5,203,431,213,443,218.7C455.4,224,468,224,480,213.3C492.3,203,505,181,517,160C529.2,139,542,117,554,122.7C566.2,128,578,160,591,186.7C603.1,213,615,235,628,245.3C640,256,652,256,665,256C676.9,256,689,256,702,245.3C713.8,235,726,213,738,213.3C750.8,213,763,235,775,250.7C787.7,267,800,277,812,277.3C824.6,277,837,267,849,266.7C861.5,267,874,277,886,261.3C898.5,245,911,203,923,154.7C935.4,107,948,53,960,32C972.3,11,985,21,997,64C1009.2,107,1022,181,1034,218.7C1046.2,256,1058,256,1071,245.3C1083.1,235,1095,213,1108,218.7C1120,224,1132,256,1145,229.3C1156.9,203,1169,117,1182,85.3C1193.8,53,1206,75,1218,112C1230.8,149,1243,203,1255,197.3C1267.7,192,1280,128,1292,101.3C1304.6,75,1317,85,1329,128C1341.5,171,1354,245,1366,266.7C1378.5,288,1391,256,1403,229.3C1415.4,203,1428,181,1434,170.7L1440,160L1440,0L1433.8,0C1427.7,0,1415,0,1403,0C1390.8,0,1378,0,1366,0C1353.8,0,1342,0,1329,0C1316.9,0,1305,0,1292,0C1280,0,1268,0,1255,0C1243.1,0,1231,0,1218,0C1206.2,0,1194,0,1182,0C1169.2,0,1157,0,1145,0C1132.3,0,1120,0,1108,0C1095.4,0,1083,0,1071,0C1058.5,0,1046,0,1034,0C1021.5,0,1009,0,997,0C984.6,0,972,0,960,0C947.7,0,935,0,923,0C910.8,0,898,0,886,0C873.8,0,862,0,849,0C836.9,0,825,0,812,0C800,0,788,0,775,0C763.1,0,751,0,738,0C726.2,0,714,0,702,0C689.2,0,677,0,665,0C652.3,0,640,0,628,0C615.4,0,603,0,591,0C578.5,0,566,0,554,0C541.5,0,529,0,517,0C504.6,0,492,0,480,0C467.7,0,455,0,443,0C430.8,0,418,0,406,0C393.8,0,382,0,369,0C356.9,0,345,0,332,0C320,0,308,0,295,0C283.1,0,271,0,258,0C246.2,0,234,0,222,0C209.2,0,197,0,185,0C172.3,0,160,0,148,0C135.4,0,123,0,111,0C98.5,0,86,0,74,0C61.5,0,49,0,37,0C24.6,0,12,0,6,0L0,0Z"></path>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#212429" fill-opacity="1" d="M0,160L15,144C30,128,60,96,90,90.7C120,85,150,107,180,106.7C210,107,240,85,270,112C300,139,330,213,360,202.7C390,192,420,96,450,53.3C480,11,510,21,540,69.3C570,117,600,203,630,213.3C660,224,690,160,720,154.7C750,149,780,203,810,208C840,213,870,171,900,165.3C930,160,960,192,990,186.7C1020,181,1050,139,1080,128C1110,117,1140,139,1170,138.7C1200,139,1230,117,1260,117.3C1290,117,1320,139,1350,165.3C1380,192,1410,224,1425,240L1440,256L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z"></path>
+</svg>
+
+
+<div id="text-programer" class="card bg-dark">
+  <img src= "https://drive.google.com/uc?export=view&id=12DaoP_a4ASbiGxUtsbpyaQsPogtMctTp" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title"></h5>
+    <p class="card-text">"The more I deal with the work as something that is my own, as something that is personal, the more successful it is."</p>
+    <p class="card-text">-- Marian Bantjes</p>
+  </div>
+</div>
+
+<section  class="py-5 bg-dark">
+  <div  class="container text-light">
+    <h2 class= "interested">Interested in working together?</h2>
+    
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Creating the look & feel of your website
+          </button>
+        </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Clarity is one of the golden rules of website design. The audience should have an enjoyable, positive experience when using your website. Whether their objective is reading content, watching a video or enrolling in a course, every action should be clear and concise throughout the website. My approach is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Website Development — Building your website
+          </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">The website development process starts by taking the graphical elements (colours, fonts, layout, images) defined in the design process and coding them using web industry standards (PHP, HTML5, CSS3, JS). This is typically done by first coding the home page, followed by templates for the interior pages. When the website is ready for review you will be supplied with login details to view the website before it is launched to the public. You will also be supplied with instructions on how to update your website.</div>
+        </div>
+      </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+           Testimonials
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Not only was Ulrich’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again. -Melixa Martinez, owner of Batbout Restaurant</div>
+    </div>
+  </div>
+</div>    
+  </div>
+</section>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#212429" fill-opacity="1" d="M0,320L0,288L62.6,288L62.6,160L125.2,160L125.2,128L187.8,128L187.8,224L250.4,224L250.4,224L313,224L313,320L375.7,320L375.7,224L438.3,224L438.3,32L500.9,32L500.9,160L563.5,160L563.5,128L626.1,128L626.1,96L688.7,96L688.7,128L751.3,128L751.3,160L813.9,160L813.9,96L876.5,96L876.5,192L939.1,192L939.1,256L1001.7,256L1001.7,224L1064.3,224L1064.3,128L1127,128L1127,288L1189.6,288L1189.6,160L1252.2,160L1252.2,64L1314.8,64L1314.8,224L1377.4,224L1377.4,128L1440,128L1440,0L1377.4,0L1377.4,0L1314.8,0L1314.8,0L1252.2,0L1252.2,0L1189.6,0L1189.6,0L1127,0L1127,0L1064.3,0L1064.3,0L1001.7,0L1001.7,0L939.1,0L939.1,0L876.5,0L876.5,0L813.9,0L813.9,0L751.3,0L751.3,0L688.7,0L688.7,0L626.1,0L626.1,0L563.5,0L563.5,0L500.9,0L500.9,0L438.3,0L438.3,0L375.7,0L375.7,0L313,0L313,0L250.4,0L250.4,0L187.8,0L187.8,0L125.2,0L125.2,0L62.6,0L62.6,0L0,0L0,0Z"></path>
+</svg>
+
+<!--<img src="https://drive.google.com/uc?export=view&id=1MWL0OgqBN4HW5hGDXlexwYL1y0w8XYW_" class="d-block w-100" alt="programmer">
+
+<section id="the-programer">
+  <figure class="blockquote">
+  <blockquote class="blockquote">
+    <p>"The more I deal with the work as something that is my own, as something that is personal, the more successful it is."</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    -- Marian Bantjes, designer and author<cite title="Source Title">The web</cite>
+  </figcaption>
+</figure>
+<section>
+ -->
+
+
+
+<footer class="page-footer font-md bg-transparent">
+
+  <div>
+    <div class="container-fluid">
+
+        <!-- Grid row-->
+         <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+             <div class="col-md-7 col-lg-5 col-xl-4 text-center text-md-left  mb-md-0 small">
+                       
+              </div>
+              <!-- Grid column -->
+               <div class="col-md-3 col-lg-4 col-xl-6 text-center text-md-left  mb-md-0 small">
+                 <div class="footer-copyright text-center text-white-50 pt-3 pb-2"> Ulrich Fladl Carmona © 2021
+                   </div>
+                   </div>
+
+
+         <!-- Grid column -->
+        <div class="col-md-2 col-lg-3 col-xl-2 text-center text-md-right">
+             <a href="#" class="text-white">
+                <i class="fab fa-facebook-f white-text mx-2"> </i></a>
+          <a href="#" class="text-white">
+           <i class="fab fa-twitter white-text mx-2"> </i></a>
+            <a href="#" class="text-white">
+              <i class="fab fa-instagram white-text mx-2"></i></a>
+              
+              <a href="https://www.behance.net/ulrichfladl" class="text-white">
+                <i class="fab fa-behance"></i></a>
+                
+              </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+    </footer>
+
+ 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<!--You need to copy the ID from the original URL (the characters between the /d/ and /view), and use it in this URL:
+
+https://drive.google.com/uc?export=view&id=0B6wwyazyzml-OGQ3VUo0Z2thdmc-->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
